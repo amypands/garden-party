@@ -2,83 +2,127 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Recipes() {
+  let recipes = [
+    {
+      name: "Spaghetti",
+      description:
+        "classic spaghetti and meatballs featuring fresh tomatoes and basil from my garden.",
+      image:
+        "https://media.istockphoto.com/photos/spaghetti-in-a-dish-on-a-white-background-picture-id1144823591?k=20&m=1144823591&s=612x612&w=0&h=6cuhQIP6Xmzu98wYGDnaxyF-Y4PBgfQiejTMQmqQKYQ=",
+      author: "@Username",
+      link: "https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
+    },
+    {
+      name: "Spaghetti",
+      description:
+        "classic spaghetti and meatballs featuring fresh tomatoes and basil from my garden.",
+      image:
+        "https://media.istockphoto.com/photos/spaghetti-in-a-dish-on-a-white-background-picture-id1144823591?k=20&m=1144823591&s=612x612&w=0&h=6cuhQIP6Xmzu98wYGDnaxyF-Y4PBgfQiejTMQmqQKYQ=",
+      author: "@Username",
+      link: "https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
+    },
+    {
+      name: "Spaghetti",
+      description:
+        "classic spaghetti and meatballs featuring fresh tomatoes and basil from my garden.",
+      image:
+        "https://media.istockphoto.com/photos/spaghetti-in-a-dish-on-a-white-background-picture-id1144823591?k=20&m=1144823591&s=612x612&w=0&h=6cuhQIP6Xmzu98wYGDnaxyF-Y4PBgfQiejTMQmqQKYQ=",
+      author: "@Username",
+      link: "https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
+    },
+    {
+      name: "Spaghetti",
+      description:
+        "classic spaghetti and meatballs featuring fresh tomatoes and basil from my garden.",
+      image:
+        "https://media.istockphoto.com/photos/spaghetti-in-a-dish-on-a-white-background-picture-id1144823591?k=20&m=1144823591&s=612x612&w=0&h=6cuhQIP6Xmzu98wYGDnaxyF-Y4PBgfQiejTMQmqQKYQ=",
+      author: "@Username",
+      link: "https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
+    },
+    {
+      name: "Spaghetti",
+      description:
+        "classic spaghetti and meatballs featuring fresh tomatoes and basil from my garden.",
+      image:
+        "https://media.istockphoto.com/photos/spaghetti-in-a-dish-on-a-white-background-picture-id1144823591?k=20&m=1144823591&s=612x612&w=0&h=6cuhQIP6Xmzu98wYGDnaxyF-Y4PBgfQiejTMQmqQKYQ=",
+      author: "@Username",
+      link: "https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
+    },
+    {
+      name: "Spaghetti",
+      description:
+        "classic spaghetti and meatballs featuring fresh tomatoes and basil from my garden.",
+      image:
+        "https://media.istockphoto.com/photos/spaghetti-in-a-dish-on-a-white-background-picture-id1144823591?k=20&m=1144823591&s=612x612&w=0&h=6cuhQIP6Xmzu98wYGDnaxyF-Y4PBgfQiejTMQmqQKYQ=",
+      author: "@Username",
+      link: "https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
+    },
+    {
+      name: "Spaghetti",
+      description:
+        "classic spaghetti and meatballs featuring fresh tomatoes and basil from my garden.",
+      image:
+        "https://media.istockphoto.com/photos/spaghetti-in-a-dish-on-a-white-background-picture-id1144823591?k=20&m=1144823591&s=612x612&w=0&h=6cuhQIP6Xmzu98wYGDnaxyF-Y4PBgfQiejTMQmqQKYQ=",
+      author: "@Username",
+      link: "https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
+    },
+    {
+      name: "Spaghetti",
+      description:
+        "classic spaghetti and meatballs featuring fresh tomatoes and basil from my garden.",
+      image:
+        "https://media.istockphoto.com/photos/spaghetti-in-a-dish-on-a-white-background-picture-id1144823591?k=20&m=1144823591&s=612x612&w=0&h=6cuhQIP6Xmzu98wYGDnaxyF-Y4PBgfQiejTMQmqQKYQ=",
+      author: "@Username",
+      link: "https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
+    },
+    {
+      name: "Spaghetti",
+      description:
+        "classic spaghetti and meatballs featuring fresh tomatoes and basil from my garden.",
+      image:
+        "https://media.istockphoto.com/photos/spaghetti-in-a-dish-on-a-white-background-picture-id1144823591?k=20&m=1144823591&s=612x612&w=0&h=6cuhQIP6Xmzu98wYGDnaxyF-Y4PBgfQiejTMQmqQKYQ=",
+      author: "@Username",
+      link: "https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/",
+    },
+  ];
+
   return (
-    <div className="container sellcontainer">
-      <div className="row ">
-        <div className="col-md-4 sellspace">
-          <h1>Add a Recipe</h1>
-          <p>Share your recipes with your community!</p>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-2">
+          <a
+            href="/createrecipes"
+            type="button"
+            className="btn btn-outline-success recipebutton"
+          >
+            Add Recipe
+          </a>
         </div>
-        <div className="col-md-8">
-          <form>
-            <div className="row mb-4">
-              <div className="col">
-                <div className="form-outline">
-                  <input
-                    type="text"
-                    id="form6Example1"
-                    className="form-control"
-                  />
-                  <label className="form-label" htmlFor="form6Example1">
-                    Recipe Name
-                  </label>
+      </div>
+      <div className="row gy-3">
+        {recipes.map(function (recipe, index) {
+          return (
+            <div key={index} className="col-md-4">
+              <div className="card">
+                <img
+                  className="card-img-top"
+                  src={recipe.image}
+                  alt="recipe image"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{recipe.name}</h5>
+                  <p className="card-text">{recipe.description}</p>
+                  <p className="card-text">
+                    <strong>{recipe.author}</strong>
+                  </p>
+                  <a href={recipe.link} className="btn btn-secondary">
+                    View Recipe
+                  </a>
                 </div>
               </div>
-              <div className="col">
-                <div className="form-outline">
-                  <input
-                    type="number"
-                    id="form6Example2"
-                    className="form-control"
-                  />
-                  <label className="form-label" htmlFor="form6Example2">
-                    Serving Size
-                  </label>
-                </div>
-              </div>
             </div>
-
-            <div className="form-outline mb-4">
-              <input type="text" id="form6Example3" className="form-control" />
-              <label className="form-label" htmlFor="form6Example3">
-                Add Image
-              </label>
-            </div>
-
-            <div className="form-outline mb-4">
-              <input type="text" id="form6Example4" className="form-control" />
-              <label className="form-label" htmlFor="form6Example4">
-                Time
-              </label>
-            </div>
-
-            <div className="form-outline mb-4">
-              <textarea
-                className="form-control"
-                id="form6Example7"
-                rows="4"
-              ></textarea>
-              <label className="form-label" htmlFor="form6Example7">
-                Ingredients
-              </label>
-            </div>
-
-            <div className="form-outline mb-4">
-              <textarea
-                className="form-control"
-                id="form6Example7"
-                rows="4"
-              ></textarea>
-              <label className="form-label" htmlFor="form6Example7">
-                Instructions
-              </label>
-            </div>
-
-            <button type="submit" className="btn btn-primary btn-block mb-4">
-              Post your product
-            </button>
-          </form>
-        </div>
+          );
+        })}
       </div>
     </div>
   );
